@@ -1,0 +1,7 @@
+{
+  "name": "harmony-health-hypnotherapy",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site — no build step required'"
+  }
+}

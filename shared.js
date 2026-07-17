@@ -1,4 +1,4 @@
-// Apply persisted theme immediately — prevents flash when navigating between pages
+// Apply persisted theme immediately; prevents flash when navigating between pages
 (function () {
   var saved = localStorage.getItem('harmony-theme');
   if (saved && /^(navy|plum|ivory)$/.test(saved)) {

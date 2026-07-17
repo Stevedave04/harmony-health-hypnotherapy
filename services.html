@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services & Wellness Tools | Harmony Health Clinical Hypnotherapy</title>
-  <meta name="description" content="Specialist clinical hypnotherapy services for anxiety, smoking cessation, IBS, trauma, and more. Plus free wellness tools — Safe Place Visualisation and 5-4-3-2-1 Grounding." />
+  <meta name="description" content="Specialist clinical hypnotherapy services for anxiety, smoking cessation, IBS, trauma, and more. Plus free wellness tools: Safe Place Visualisation and 5-4-3-2-1 Grounding." />
   <link rel="icon" href="uploads/logo-1777584485457.jpg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +60,7 @@
   <div class="page-header-inner">
     <span class="page-header-eyebrow">What I Offer</span>
     <h1 class="page-header-title">Specialist<br><em>Services.</em></h1>
-    <p class="page-header-sub">Evidence-based hypnotherapy tailored to you — grounded in clinical training and delivered with genuine warmth.</p>
+    <p class="page-header-sub">Evidence-based hypnotherapy tailored to you, grounded in clinical training and delivered with genuine warmth.</p>
   </div>
 </div>
 
@@ -72,26 +72,24 @@
       <div class="service-card service-main" style="border-radius:24px 0 0 0;">
         <div class="service-num">01</div>
         <h3 class="service-title">Anxiety & Stress Relief</h3>
-        <p class="service-desc">The most common reason people seek hypnotherapy — and the area I am most passionate about. Whether you experience generalised anxiety, panic attacks, health anxiety, or the burnout that comes from relentless giving, we work directly with your unconscious mind to rewrite the patterns that keep you stuck in fight-or-flight. Drawing on my frontline NHS experience and personal healing journey, I offer a safe space where real change happens.</p>
+        <p class="service-desc">This is the most common reason people seek hypnotherapy, and the area I am most passionate about. Whether you experience generalised anxiety, panic attacks, health anxiety, or the burnout that comes from relentless giving, we work directly with your unconscious mind to rewrite the patterns that keep you stuck in fight-or-flight. Drawing on my frontline NHS experience and personal healing journey, I offer a safe space where real change happens.</p>
         <span class="service-tag">Most Popular</span>
       </div>
-      <div style="display:flex;flex-direction:column;gap:2px;">
-        <div class="service-card" style="border-radius:0 24px 0 0;flex:1;">
-          <div class="service-num">02</div>
-          <h3 class="service-title">Smoking Cessation</h3>
-          <p class="service-desc">Rewire your relationship with smoking at the unconscious level. Many clients achieve lasting freedom in just one to two sessions using my personalised cognitive reprogramming approach.</p>
-        </div>
-        <div class="service-card" style="border-radius:0;flex:1;">
-          <div class="service-num">03</div>
-          <h3 class="service-title">IBS Symptom Relief</h3>
-          <p class="service-desc">Clinical hypnotherapy has strong evidence for calming the gut-brain axis. Reduce physical discomfort, bloating, and pain through deep relaxation techniques designed specifically for IBS.</p>
-        </div>
+      <div class="service-card" style="border-radius:0 24px 0 0;">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Smoking Cessation</h3>
+        <p class="service-desc">Rewire your relationship with smoking at the unconscious level. Many clients achieve lasting freedom in just one to two sessions using my personalised cognitive reprogramming approach.</p>
       </div>
-      <!-- Row 2: Breathwork — full-width card -->
-      <div class="service-card" style="grid-column:span 3;border-radius:0 0 24px 24px;">
+      <div class="service-card" style="border-radius:0;">
+        <div class="service-num">03</div>
+        <h3 class="service-title">IBS Symptom Relief</h3>
+        <p class="service-desc">Clinical hypnotherapy has strong evidence for calming the gut-brain axis. Reduce physical discomfort, bloating, and pain through deep relaxation techniques designed specifically for IBS.</p>
+      </div>
+      <!-- Row 3: Breathwork, full-width card -->
+      <div class="service-card service-wide" style="border-radius:0 0 24px 24px;">
         <div class="service-num">04</div>
         <h3 class="service-title">Breathwork &amp; Nervous System Regulation</h3>
-        <p class="service-desc">Your breath is the one autonomic function you can consciously control — and through it, you have direct access to your nervous system. Using clinical breathwork protocols, I guide your body out of chronic fight-or-flight and into deep rest-and-restore. Particularly effective for anxiety, panic, burnout, insomnia, and emotional dysregulation. Sessions are available standalone or woven into hypnotherapy programmes for compounding, lasting effect.</p>
+        <p class="service-desc">Your breath is the one autonomic function you can consciously control, and through it you have direct access to your nervous system. Using clinical breathwork protocols, I guide your body out of chronic fight-or-flight and into deep rest-and-restore. Particularly effective for anxiety, panic, burnout, insomnia, and emotional dysregulation. Sessions are available standalone or woven into hypnotherapy programmes for compounding, lasting effect.</p>
         <span class="service-tag">Available Online &amp; In-Person</span>
       </div>
     </div>
@@ -170,7 +168,7 @@ const SP_PROMPTS = [
   { label: 'Arrive', text: 'Close your eyes and take a slow breath. Imagine yourself arriving in your safe place. Notice the colours, the light, the quality of the air.' },
   { label: 'Ground', text: 'Feel the ground beneath you. Notice what your feet or body rests upon. Is it soft, firm, warm? Let yourself settle into this place fully.' },
   { label: 'Listen', text: 'What sounds are here? Let them wash over you gently. Perhaps silence. Perhaps nature. There is nothing you need to do right now.' },
-  { label: 'Breathe', text: 'Take three slow, deep breaths. With each exhale, let your shoulders soften. This place belongs entirely to you — safe, peaceful, yours.' },
+  { label: 'Breathe', text: 'Take three slow, deep breaths. With each exhale, let your shoulders soften. This place belongs entirely to you. Safe, peaceful, yours.' },
   { label: 'Anchor', text: 'Place your hand on your heart. Feel the warmth. Know that you can return here any time you need to. This calm lives within you.' },
 ];
 
@@ -202,7 +200,7 @@ function SafePlace() {
   return (
     <div className="tool-card">
       <h3 className="tool-title">Safe Place Visualisation</h3>
-      <p className="tool-desc">A guided imagery technique from clinical hypnotherapy — create your inner sanctuary</p>
+      <p className="tool-desc">A guided imagery technique from clinical hypnotherapy. Create your inner sanctuary.</p>
       <div className="sp-scene-wrap">
         <div className="sp-scene-tabs">
           {Object.entries(SCENES).map(([key, s]) => (
@@ -223,7 +221,7 @@ function SafePlace() {
       {step !== null && !done && (
         <>
           <div className="sp-prompt-box">
-            <div className="sp-prompt-label">Step {step + 1} of {SP_PROMPTS.length} — {SP_PROMPTS[step].label}</div>
+            <div className="sp-prompt-label">Step {step + 1} of {SP_PROMPTS.length} · {SP_PROMPTS[step].label}</div>
             <div className="sp-prompt-text">{SP_PROMPTS[step].text}</div>
           </div>
           <div className="sp-nav">

@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
   <script type="text/babel" src="tweaks-panel.jsx"></script>
-  <!-- Hero orb parallax owns transform — disable competing CSS float animation -->
+  <!-- Hero orb parallax owns transform; disable competing CSS float animation -->
   <style>.hero .hero-orb-1,.hero .hero-orb-2{animation:none}</style>
 </head>
 <body class="theme-navy">
@@ -37,7 +37,7 @@
     <a href="blog.html">Blog</a>
     <a href="contact.html#faq">FAQ</a>
   </div>
-  <a href="contact.html" class="nav-cta">Book a Session</a>
+  <a href="contact.html" class="nav-cta">Free Consultation</a>
   <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
     <span></span><span></span><span></span>
   </button>
@@ -51,7 +51,7 @@
   <a href="about.html#testimonials" class="mobile-nav-link">Stories</a>
   <a href="blog.html" class="mobile-nav-link">Blog</a>
   <a href="contact.html#faq" class="mobile-nav-link">FAQ</a>
-  <a href="contact.html" class="mobile-cta mobile-nav-link">Book a Session</a>
+  <a href="contact.html" class="mobile-cta mobile-nav-link">Free Consultation</a>
 </nav>
 
 <main id="main-content">
@@ -65,7 +65,7 @@
     <span class="hero-eyebrow">Clinical Hypnotherapy · Northern Ireland</span>
     <h1 class="hero-title">One breath,<br><em>one moment.</em></h1>
     <p class="hero-tagline">"Your calm begins here."</p>
-    <p class="hero-sub">Evidence-based hypnotherapy for anxiety, stress, and habit change — delivered with clinical expertise and deep human understanding by former NHS Nurse, Belle Stevenson.</p>
+    <p class="hero-sub">When anxiety runs the show, even ordinary days feel like too much. You should not have to carry that alone. I am Belle Stevenson, a former NHS Nurse and Clinical Hypnotherapist, and I help you quieten the racing mind and feel like yourself again.</p>
     <div class="hero-btns">
       <a href="contact.html" class="btn-primary">Book a Free Consultation</a>
       <a href="services.html" class="btn-secondary">Explore Services</a>
@@ -96,30 +96,33 @@
     <div class="services-header fade-up">
       <span class="section-eyebrow">What I Offer</span>
       <h2 class="section-title">Specialist Services</h2>
-      <p class="section-sub">Every session is tailored to you — grounded in clinical training and delivered with warmth.</p>
+      <p class="section-sub">Every session is tailored to you, grounded in clinical training and delivered with warmth.</p>
     </div>
     <div class="services-grid fade-up fade-up-delay-1">
-      <div class="service-card service-main">
+      <div class="service-card service-main" style="border-radius:24px 0 0 0;">
         <div class="service-num">01</div>
         <h3 class="service-title">Anxiety & Stress Relief</h3>
-        <p class="service-desc">The most common reason people seek hypnotherapy — and the area I am most passionate about. Whether you experience generalised anxiety, panic attacks, health anxiety, or the burnout that comes from relentless giving, we work directly with your unconscious mind to rewrite the patterns that keep you stuck in fight-or-flight.</p>
+        <p class="service-desc">This is the most common reason people seek hypnotherapy, and the area I am most passionate about. Whether you experience generalised anxiety, panic attacks, health anxiety, or the burnout that comes from relentless giving, we work directly with your unconscious mind to rewrite the patterns that keep you stuck in fight-or-flight.</p>
         <span class="service-tag">Most Popular</span>
       </div>
-      <div style="display:flex;flex-direction:column;gap:2px;">
-        <div class="service-card" style="border-radius:0 24px 0 0;flex:1;">
-          <div class="service-num">02</div>
-          <h3 class="service-title">Smoking Cessation</h3>
-          <p class="service-desc">Rewire your relationship with smoking at the unconscious level. Many clients achieve lasting freedom in just one to two sessions using my personalised cognitive reprogramming approach.</p>
-        </div>
-        <div class="service-card" style="border-radius:0 0 24px 0;flex:1;">
-          <div class="service-num">03</div>
-          <h3 class="service-title">IBS Symptom Relief</h3>
-          <p class="service-desc">Clinical hypnotherapy has strong evidence for calming the gut-brain axis. Reduce physical discomfort, bloating, and pain through deep relaxation techniques designed specifically for IBS.</p>
-        </div>
+      <div class="service-card" style="border-radius:0 24px 0 0;">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Smoking Cessation</h3>
+        <p class="service-desc">Rewire your relationship with smoking at the unconscious level. Many clients achieve lasting freedom in just one to two sessions using my personalised cognitive reprogramming approach.</p>
+      </div>
+      <div class="service-card" style="border-radius:0;">
+        <div class="service-num">03</div>
+        <h3 class="service-title">IBS Symptom Relief</h3>
+        <p class="service-desc">Clinical hypnotherapy has strong evidence for calming the gut-brain axis. Reduce physical discomfort, bloating, and pain through deep relaxation techniques designed specifically for IBS.</p>
+      </div>
+      <div class="service-card service-wide" style="border-radius:0 0 24px 24px;">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Breathwork &amp; Nervous System Regulation</h3>
+        <p class="service-desc">Your breath is the one autonomic function you can consciously control, and through it you have direct access to your nervous system. Using clinical breathwork protocols, I guide your body out of chronic fight-or-flight and into deep rest-and-restore. Particularly effective for anxiety, panic, burnout, insomnia, and emotional dysregulation.</p>
+        <span class="service-tag">Available Online &amp; In-Person</span>
       </div>
     </div>
     <div class="about-tags fade-up fade-up-delay-2" style="margin-top:32px;justify-content:center;">
-      <span class="about-tag">Breathwork &amp; Nervous System</span>
       <span class="about-tag">Trauma & Emotional Overwhelm</span>
       <span class="about-tag">Confidence & Self-Esteem</span>
       <span class="about-tag">Sleep Difficulties</span>
@@ -147,8 +150,8 @@
         <span class="section-eyebrow">Meet Your Therapist</span>
         <h2 class="about-name">Belle<br>Stevenson</h2>
         <p class="about-role">Clinical Hypnotherapist · Registered Nurse</p>
-        <p class="about-bio">Hi, I'm Belle — a former NHS Nurse turned Clinical Hypnotherapist with a passion for healing hearts and minds. My journey began on the <strong>COVID-19 frontlines</strong>, where I witnessed incredible resilience alongside profound mental health struggles. This experience shaped my deep understanding of anxiety, stress, and depression.</p>
-        <p class="about-bio">When you work with me, you will find <strong>a space of complete safety and acceptance</strong> — grounded in clinical expertise and genuine human warmth.</p>
+        <p class="about-bio">Hi, I'm Belle, a former NHS Nurse turned Clinical Hypnotherapist with a passion for healing hearts and minds. My journey began on the <strong>COVID-19 frontlines</strong>, where I witnessed incredible resilience alongside profound mental health struggles. This experience shaped my deep understanding of anxiety, stress, and depression.</p>
+        <p class="about-bio">When you work with me, you will find <strong>a space of complete safety and acceptance</strong>, grounded in clinical expertise and genuine human warmth.</p>
         <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
           <a href="about.html" class="btn-primary">Meet Belle</a>
           <a href="about.html#testimonials" class="btn-secondary">Client Stories</a>
@@ -158,11 +161,40 @@
   </div>
 </section>
 
-<!-- CTA BANNER -->
+<!-- PLAN -->
+<section id="plan" style="background:var(--bg);">
+  <div class="section-inner">
+    <div class="services-header fade-up" style="text-align:center;">
+      <span class="section-eyebrow">A Simple Path Forward</span>
+      <h2 class="section-title">How we work<br><em>together.</em></h2>
+      <p class="section-sub">No confusing process. No pressure. Three gentle steps from where you are now to feeling like yourself again.</p>
+    </div>
+    <div class="plan-grid fade-up fade-up-delay-1" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;">
+      <div class="plan-step">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Book your free call</h3>
+        <p class="service-desc">Fifteen minutes, no cost, no commitment. Just a warm conversation so I can understand what you are going through and you can decide if I am the right fit for you.</p>
+      </div>
+      <div class="plan-step">
+        <div class="service-num">02</div>
+        <h3 class="service-title">We build your plan</h3>
+        <p class="service-desc">Together we shape a personalised programme around your goals, drawing on evidence-based clinical hypnotherapy and my NHS background. You will always know what comes next.</p>
+      </div>
+      <div class="plan-step">
+        <div class="service-num">03</div>
+        <h3 class="service-title">You start feeling lighter</h3>
+        <p class="service-desc">Session by session, we work with your unconscious mind to loosen the patterns that keep you stuck, so calm becomes something you live in rather than chase.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS + CTA BANNER -->
 <div class="cta-banner">
   <div class="cta-banner-inner fade-up">
+    <p class="cta-banner-success" style="max-width:640px;margin:0 auto 8px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.25rem,1rem+1vw,1.75rem);line-height:1.5;opacity:0.92;">Imagine waking up without that knot in your chest. Sleeping through the night. Facing the day steady, clear, and back in the driving seat of your own life.</p>
     <h2 class="cta-banner-title">Ready to begin your<br><em>journey to calm?</em></h2>
-    <p class="cta-banner-sub">Book a free 15-minute consultation — no commitment, just a conversation about how I can help.</p>
+    <p class="cta-banner-sub">Book a free 15-minute consultation. No commitment, just a conversation about how I can help. Every week you wait is another week living braced for the next wave. It does not have to be this way.</p>
     <div class="cta-banner-btns">
       <a href="contact.html" class="btn-primary">Book a Free Consultation</a>
       <a href="contact.html#faq" class="btn-secondary">Have Questions?</a>
@@ -189,7 +221,7 @@
   </div>
 </footer>
 
-<!-- REACT: Tweaks panel (home page — includes hero title + credentials wiring) -->
+<!-- REACT: Tweaks panel (home page: includes hero title + credentials wiring) -->
 <script type="text/babel">
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "theme": "navy",

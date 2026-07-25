@@ -178,7 +178,9 @@ body.theme-navy {
 
 /* ── Hero ── */
 .hero {
-  min-height: 100vh;
+  /* Fill the screen on laptops, but cap on tall monitors so the centred
+     content doesn't float in a large void (content + padding ≈ 850px). */
+  min-height: min(100vh, 900px);
   background: var(--hero-grad);
   display: flex; align-items: center; justify-content: center;
   text-align: center;
@@ -254,12 +256,11 @@ section { padding: 100px 40px; }
 .services-header .section-sub { margin: 0 auto; }
 .services-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; }
 /* Main card spans two columns and two rows so it aligns with the two stacked
-   cards in column three, rather than being stretched by them. Its height is
-   therefore set by those two cards, not by its own content, so the number is
-   anchored to the top and the text block to the bottom to use that height
-   deliberately rather than leaving a void in the middle. */
-.service-main { grid-column: span 2; grid-row: span 2; }
-.service-main .service-title { margin-top: auto; }
+   cards in column three. Its height is therefore set by those two cards, not by
+   its own content, so the content is centred as one block: the spare height
+   becomes balanced breathing room above and below rather than a gap that splits
+   the number from the text. */
+.service-main { grid-column: span 2; grid-row: span 2; justify-content: center; }
 .service-main .service-num { font-size: 88px; }
 .service-main .service-title { font-size: 38px; }
 .service-main .service-desc { font-size: 16px; max-width: 54ch; }
@@ -267,9 +268,8 @@ section { padding: 100px 40px; }
 .service-wide .service-desc { max-width: 92ch; }
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr; }
-  /* Natural height on mobile: no spare space to distribute, so reset the anchoring. */
-  .service-main { grid-column: span 1; grid-row: span 1; }
-  .service-main .service-title { margin-top: 0; }
+  /* Natural height on mobile: no spare space to distribute, so top-align. */
+  .service-main { grid-column: span 1; grid-row: span 1; justify-content: flex-start; }
   .service-main .service-num { font-size: 64px; }
   .service-main .service-title { font-size: 30px; }
   .service-wide { grid-column: 1 / -1; }
